@@ -1,0 +1,237 @@
+.container {
+    transform: translateY(-100%);
+    margin-top:200px;
+}
+
+.container p {
+    color: red;
+    text-align: center;
+}
+
+.drop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 200px;
+    border: 3px dashed #FD6A02;
+    margin-top:20px;
+}
+
+.upload-icon {
+    width: 100px;
+    height: 100px;
+    background: url(../images/upload.png) no-repeat center center; 
+    background-size: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.drop-message {
+    text-align: center;
+    color: #FD6A02;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.file-display-container {
+    position:fixed;
+    width: 700px;
+    margin-top:270px;
+    overflow:auto;
+    overflow-x:hidden;
+    height:300px;
+}
+
+.file-status-bar{
+    width: 100%;
+    vertical-align:top;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 50px;
+    height: 40px;
+}
+
+.file-status-bar > div {
+    overflow: hidden;
+}
+
+.file-type {
+    display: inline-block!important;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    margin-top: 25px;
+    padding: 0 4px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #abc;
+    color: #fff;
+    background: #FD6A02;
+    text-transform: uppercase;
+}
+
+.file-name {
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 50px;
+    color: #FD6A02;
+}
+
+.file-error {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    color: #9aa9bb;
+}
+
+.file-error-message {
+    color: red;
+}
+
+.file-type-logo {
+    width: 50px;
+    height: 50px;
+    background: url(../images/file.png) no-repeat center center; 
+    background-size: 100%;
+    position: absolute;
+}
+
+.file-size {
+    display:inline-block;
+    vertical-align:top;
+    color:#30693D;
+    margin-left:10px;
+    margin-right:5px;
+    margin-left: 10px;
+    color: #444242;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.file-remove  {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    line-height: 15px;
+    cursor: pointer;
+    color: red;
+    margin-right: 5px;
+}
+
+
+.view{
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+}
+
+.view .overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.view .view-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.file-button{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.file-upload-btn {
+    color: white;
+    text-transform: uppercase;
+    background-color: #FD6A02;
+    padding: 8px 15px;
+}
+
+.file-select{
+    display:none;
+}
+
+.upload-modal {
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+}
+
+.upload-modal .overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-container {
+    background: white;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.progress-container span {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.progress {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #efefef;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    position: absolute;
+    background-color: #FD6A02;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
